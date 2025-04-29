@@ -57,7 +57,7 @@ public class PecaView {
         String nome = scanner.nextLine();
         System.out.print("Quantidade: ");
         int quantidade = scanner.nextInt();
-        System.out.print("Preço: ");
+        System.out.print("P1reço: ");
         double preco = scanner.nextDouble();
         pecaController.adicionarPeca(nome, quantidade, preco);
         System.out.println("Peça adicionada com sucesso!");
@@ -97,11 +97,6 @@ public class PecaView {
         int id = scanner.nextInt();
         pecaController.removerPeca(id);
         System.out.println("Peça removida com sucesso!");
-    }
-
-    public static void main(String[] args) {
-        PecaView pecaView = new PecaView();
-        pecaView.exibirMenu();
     }
 }
 
