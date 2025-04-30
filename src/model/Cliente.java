@@ -4,10 +4,6 @@
  */
 package model;
 
-/**
- *
- * @author ADM
- */
 public class Cliente {
     private String nome;
     private String endereço;
