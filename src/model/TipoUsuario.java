@@ -4,12 +4,8 @@
  */
 package model;
 
-/**
- *
- * @author Ana Carolina
- */
 public enum TipoUsuario {
-    ADMINISTRADOR,
-    ATENDENTE,
-    MECANICO
+    Administrador,
+    Atendente,
+    Mecanico
 }
