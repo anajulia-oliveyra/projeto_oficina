@@ -4,8 +4,6 @@
  */
 package model;
 
-
-
 public class Veículo {
     private String placa;
     private String modelo;
