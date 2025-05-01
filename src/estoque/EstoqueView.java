@@ -1,7 +1,7 @@
 
-package view;
+package estoque;
 import controller.PecaController;
-import model.Peça;
+import estoque.Peça;
 
 import java.util.List;
 import java.util.Scanner;

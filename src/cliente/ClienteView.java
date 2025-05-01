@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package view;
+package cliente;
 
-import model.Cliente;
-import repository.clienteRepository;
+import cliente.Cliente;
+import cliente.ClienteRepository;
 
-public class clienteView {
+public class ClienteView {
 
 public class main {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class main {
         
         System.out.println(cliente);
         
-        clienteRepository repositorio = new clienteRepository();
+        ClienteRepository repositorio = new ClienteRepository();
         
         Cliente cliente1 = new Cliente("Ana Carolina", "Rua for", "(38) 99999-9999", "ana@email.com", "123.456.789-00");
         Cliente cliente2 = new Cliente("Ana Julia", "Rua B", "(38) 98888-8888", "julia@email.com", "987.654.321-00");

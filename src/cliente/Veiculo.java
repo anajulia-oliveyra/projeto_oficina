@@ -6,7 +6,7 @@ package cliente;
 
 import cliente.Cliente;
 
-public class Veículo {
+public class Veiculo {
     private String placa;
     private String modelo;
     private String marca;
@@ -14,7 +14,7 @@ public class Veículo {
     private String cor;
     private Cliente dono;
     
-    public Veículo(String placa, String modelo, String marca, int ano, String cor, Cliente dono){
+    public Veiculo(String placa, String modelo, String marca, int ano, String cor, Cliente dono){
         this.placa = placa;
         this.modelo = modelo;
         this.marca = marca;
