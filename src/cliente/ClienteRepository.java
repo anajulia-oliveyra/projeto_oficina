@@ -3,7 +3,6 @@ package cliente;
 
 import java.util.ArrayList;
 import java.util.List;
-import cliente.Cliente;
 
     public class ClienteRepository {
     private List<Cliente> clientes = new ArrayList<>();

@@ -10,13 +10,13 @@ public class Usuario {
     private String nome;
     private String login;
     private String senha;
-    private String tipo;
+    private CargoUsuario cargo;
     
-    public Usuario(String nome, String login, String senha, String tipo){
+    public Usuario(String nome, String login, String senha, CargoUsuario cargo){
         this.nome = nome;
         this.login = login;
         this.senha = senha;
-        this.tipo = tipo;
+        this.cargo = cargo;
     }
 
     public String getNome() {
@@ -43,12 +43,12 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public String getTipo() {
-        return tipo;
+    public CargoUsuario getCargo() {
+        return cargo;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setCargo(CargoUsuario cargo) {
+        this.cargo = cargo;
     }
     
     @Override
@@ -56,7 +56,7 @@ public class Usuario {
         return "Usuario{ " +
                 "Nome = '" + nome + '\'' +
                 ", Login = '" + login + '\'' +
-                ", Tipo = '" + tipo +
+                ", Cargo = '" + cargo +
                 '}';
     }
 }
