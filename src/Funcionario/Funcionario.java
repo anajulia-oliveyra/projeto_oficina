@@ -1,19 +1,4 @@
-
-package funcionario;
-
-/**
- *
- * @author ADM
- */
-public class Funcionario {
-    
-}
-=======
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package funcionario;
+package Funcionario;
 
 import org.json.JSONObject;
         
@@ -22,9 +7,9 @@ public class Funcionario {
     private String nome;
     private String CPF;
     private String cargo;
-    private TipoUsuario tipoUsuario;
+    private CargoUsuario tipoUsuario;
     
-    public Funcionario(String nome, String CPF, String cargo, TipoUsuario tipoUsuario){
+    public Funcionario(String nome, String CPF, String cargo, CargoUsuario tipoUsuario){
         this.nome = nome;
         this.CPF = CPF;
         this.cargo = cargo;
@@ -55,11 +40,11 @@ public class Funcionario {
         this.cargo = cargo;
     }
 
-    public TipoUsuario getTipoUsuario() {
+    public CargoUsuario getTipoUsuario() {
         return tipoUsuario;
     }
 
-    public void setTipoUsuario(TipoUsuario tipoUsuario) {
+    public void setTipoUsuario(CargoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
     }
     

@@ -1,7 +1,7 @@
 package Funcionario;
 
 
-public class Atendente extends Funcionario {
+public class Atendente {
     
  
     
