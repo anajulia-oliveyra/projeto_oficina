@@ -8,6 +8,6 @@ package Financeiro;
  *
  * @author Ana Carolina
  */
-public class Receita {
+public class Despesas {
     
 }

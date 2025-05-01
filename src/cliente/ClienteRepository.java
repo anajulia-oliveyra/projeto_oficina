@@ -7,10 +7,7 @@ package repository;
 import java.util.ArrayList;
 import java.util.List;
 import model.Cliente;
-/**
- *
- * @author ADM
- */
+
     public class clienteRepository {
     private List<Cliente> clientes = new ArrayList<>();
     
