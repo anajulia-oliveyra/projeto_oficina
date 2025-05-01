@@ -1,26 +1,31 @@
-package Funcionario;
+
+package funcionario;
+
+/**
+ *
+ * @author ADM
+ */
+public class Funcionario {
+    
+}
+=======
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package funcionario;
 
 public class Funcionario {
-    private int id;
     private String nome;
-    private String cpf;
-    private CargoUsuario cargoUsuario;
+    private String CPF;
+    private String cargo;
+    private TipoUsuario tipoUsuario;
     
-    public Funcionario(){}
-    
-    public Funcionario (int id, String nome, String cpf, CargoUsuario cargoUsuario){
-        this.id = id;
+    public Funcionario(String nome, String CPF, String cargo, TipoUsuario tipoUsuario){
         this.nome = nome;
-        this.cpf = cpf;
-        this.cargoUsuario = cargoUsuario;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        this.CPF = CPF;
+        this.cargo = cargo;
+        this.tipoUsuario = tipoUsuario;
     }
 
     public String getNome() {
@@ -31,21 +36,38 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public String getCpf() {
-        return cpf;
+    public String getCPF() {
+        return CPF;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setCPF(String CPF) {
+        this.CPF = CPF;
     }
 
-    public CargoUsuario getCargoUsuario() {
-        return cargoUsuario;
+    public String getCargo() {
+        return cargo;
     }
 
-    public void setCargoUsuario(CargoUsuario cargoUsuario) {
-        this.cargoUsuario = cargoUsuario;
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public TipoUsuario getTipoUsuario() {
+        return tipoUsuario;
+    }
+
+    public void setTipoUsuario(TipoUsuario tipoUsuario) {
+        this.tipoUsuario = tipoUsuario;
     }
     
     
+    @Override
+    public String toString(){
+        return "Funcionario {" +
+                "Nome = '" + nome + '\'' +
+                ", CPF = '" + CPF + '\'' +
+                ", Cargo = '" + cargo +
+                '}';
+    }
 }
+
