@@ -3,43 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/model/Agendamento.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/model/Mecanico.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/model/Administrador.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Serviço/Agendamento.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Serviço/NotaFiscal.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Serviço/StatusDoServiço.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Financeiro/Despesas.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Financeiro/Receita.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Financeiro/BalançoMensal.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/Mecanico.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/Atendente.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/Administrador.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/Cargo.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/funcionarioController.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/funcionarioView.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Financeiro/financeiroController.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Financeiro/financeiroView.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Serviço/serviçoController.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Serviço/serviçoView.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/login.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Veículo/Veículo.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Veículo/peça.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Veículo/estoque.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/servico/ServicoRealizado.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/servico/StatusServico.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/Funcionario.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/CadastroFuncionarioView.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/CargoFuncionario.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/Funcionario/ControlePonto.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/cliente/Agendamento.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/cliente/AgendamentoView.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/cliente/Cliente.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/cliente/ClienteRepository.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/cliente/ClienteView.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/cliente/OrdemdeServiço.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/cliente/OrdemdeServiçoView.java</file>
-            <file>file:/C:/Users/Ana%20Carolina/OneDrive/Documentos/NetBeansProjects/projeto_oficina/src/cliente/Veiculo.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Main/Main.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/CargoUsuario.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/Usuario.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/Login.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/LoginView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/Cliente.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/ClienteRepository.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/ClienteView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/Veiculo.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/estoque/Estoquecontroller.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/funcionario/Funcionario.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/estoque/Peca.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/estoque/EstoqueView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/OrdemdeServiçoView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/OrdemdeServiço.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/AgendamentoView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/Agendamento.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/AdicionarUsuario.java</file>
         </group>
     </open-files>
 </project-private>
