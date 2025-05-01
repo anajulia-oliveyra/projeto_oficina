@@ -1,5 +1,8 @@
 package Funcionario;
 
+import org.json.JSONObject;
+        
+        
 public class Funcionario {
     private int id;
     private String nome;

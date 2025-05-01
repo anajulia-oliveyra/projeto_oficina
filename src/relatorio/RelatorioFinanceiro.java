@@ -1,23 +1,6 @@
-<<<<<<< HEAD:src/relatorio/RelatorioFinanceiro.java
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package relatorio;
 
-/**
- *
- * @author ADM
- */
 public class RelatorioFinanceiro {
-    
-}
-=======
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package repository;
 
 import model.Agendamento;
 import java.util.ArrayList;
@@ -44,4 +27,3 @@ public class agendamentoRepository {
         return resultado;
     }
 }
->>>>>>> 63baafe6ad1af68a8a7dd0177871389df5aeec5e:src/repository/agendamentoRepository.java
