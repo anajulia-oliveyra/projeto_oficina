@@ -1,18 +1,20 @@
 package Funcionario;        
-        
+
+import Agenda.agenda;
+
 public class Funcionario {
     private int id;
     private String nome;
     private String CPF;
     private String cargo;
-    //private CargoUsuario tipoUsuario;
+    private Agenda.agenda agenda;
     
-    public Funcionario(int id, String nome, String CPF, String cargo){
+    public Funcionario(int id, String nome, String CPF, String cargo, agenda agenda){
         this.id = id;
         this.nome = nome;
         this.CPF = CPF;
         this.cargo = cargo;
-        //this.tipoUsuario = tipoUsuario;
+        this.agenda = agenda;
     }
     
     public int getId(){
@@ -46,15 +48,6 @@ public class Funcionario {
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
-
-   /* public CargoUsuario getTipoUsuario() {
-        return tipoUsuario;
-    }
-
-    public void setTipoUsuario(CargoUsuario tipoUsuario) {
-        this.tipoUsuario = tipoUsuario;
-    }
-    */
     
     public void acessarAgenda(){
         System.out.println(getNome() + " acessando agenda");

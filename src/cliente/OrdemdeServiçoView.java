@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package cliente;
 
-/**
- *
- * @author ADM
- */
 public class OrdemdeServiçoView {
-    
+    public static void main(String[] args){
+        OrdemdeServiço servico = new OrdemdeServiço(1, "Troca de oleo");
+        
+        servico.gerarOrddemServico();
+    }
 }

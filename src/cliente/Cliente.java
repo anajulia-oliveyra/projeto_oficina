@@ -1,6 +1,6 @@
-
-
 package cliente;
+
+import Agenda.agenda;
 
 public class Cliente {
     private String nome;
@@ -8,53 +8,19 @@ public class Cliente {
     private String telefone;
     private String email;
     private String cpf;
+    private Agenda.agenda agenda;
     
-    public Cliente(String nome, String endereço, String telefone, String email, String cpf){
+    public Cliente(String nome, String endereço, String telefone, String email, String cpf, agenda agenda){
         this.nome = nome;
         this.endereço = endereço;
         this.telefone = telefone;
         this.email = email;
         this.cpf = cpf;
+        this.agenda = agenda;
     }
 
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEndereço() {
-        return endereço;
-    }
-
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
     
     public String getCpfAnonimizado(){
@@ -67,16 +33,23 @@ public class Cliente {
         }
         return "***";
     }
-     
+    
+    public void consultarStatusVeiculo(){
+        System.out.println(getNome() + " consultando status do veiculo.");
+    }
+    
+    public void realizarPagamento(boolean pago){
+        System.out.println(pago ? " Pagamento realizado." : "Pagamento ainda nao realizado");
+    }
+
     @Override
     public String toString(){
         return '{' +
-                "Cliente{" +
-                "Nome = " + nome + '\'' +
-                ", Endereco = " + endereço + '\'' +
-                ", Telefone = " + telefone + '\'' +
-                ", Email = " + email + '\'' +
-                ", Cpf = " + getCpfAnonimizado() + '\'' +'}';
+                "Cliente: " + nome +
+                "\nEndreço: " + endereço +
+                "\nTelefone: " + telefone +
+                "\nEmail = " + email +
+                "\nCpf: " + getCpfAnonimizado();
 }
 }
 
