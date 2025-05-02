@@ -4,15 +4,15 @@ public class Funcionario {
     private int id;
     private String nome;
     private String CPF;
-    //private Cargo cargo;
-    private CargoUsuario tipoUsuario;
+    private String cargo;
+    //private CargoUsuario tipoUsuario;
     
-    public Funcionario(int id, String nome, String CPF, CargoUsuario tipoUsuario){
+    public Funcionario(int id, String nome, String CPF, String cargo){
         this.id = id;
         this.nome = nome;
         this.CPF = CPF;
-        //this.cargo = cargo;
-        this.tipoUsuario = tipoUsuario;
+        this.cargo = cargo;
+        //this.tipoUsuario = tipoUsuario;
     }
     
     public int getId(){
@@ -39,30 +39,37 @@ public class Funcionario {
         this.CPF = CPF;
     }
 
-   /*/ public Cargo getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(Cargo cargo) {
+   public void getcargo(String cargo) {
         this.cargo = cargo;
     }
-*/
-    public CargoUsuario getTipoUsuario() {
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+   /* public CargoUsuario getTipoUsuario() {
         return tipoUsuario;
     }
 
     public void setTipoUsuario(CargoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
     }
+    */
     
+    public void acessarAgenda(){
+        System.out.println(getNome() + " acessando agenda");
+    }
+    
+    public void realizarAgendamento(){
+        System.out.println(getNome() + " realizando agendamento");
+    }
     
     @Override
     public String toString(){
-        return "Funcionario {" +
-                "Id = '" + id + '\'' +
-                ", Nome = '" + nome + '\'' +
-                ", CPF = '" + CPF + '\'' +
-                '}';
+        return "Funcionario: " + nome +
+                "\nCargo: " + cargo +
+                "\nCPF: " + CPF +
+                "\nID: " + id;
     }
 }
 

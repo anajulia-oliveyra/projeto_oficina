@@ -2,17 +2,19 @@ package Funcionario;
 
 public class Mecanico extends Funcionario {
     
-    public Mecanico(int id, String nome, String cpf){
-        super(id, nome, cpf, CargoUsuario.Mecanico);
+    public Mecanico(int id, String nome, String cpf, String cargo){
+        super(id, nome, cpf, cargo);
     }
     
-    public void realizarManutencao(){
-        System.out.println("Realizando manutenção do veiculo");
+    public void criarListaServiço(){
+        System.out.println(getNome() + " criando lista de servico");
     }
     
-    public void verificarStatusVeiculo(){
-        System.out.println("Verificando status do veiculo ");
+    public void atualizarStatusVeiculo(){
+        System.out.println(getNome() + " atualizando status do veiculo ");
     }
     
-    
+    public void gerarRelatorioInspecao(){
+        System.out.println(getNome() + " gerando relatorio de inspecao");
+    }
 }
