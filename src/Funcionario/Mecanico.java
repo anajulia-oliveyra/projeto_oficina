@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Funcionario;
 
-/**
- *
- * @author Ana Carolina
- */
-public class Mecanico {
+public class Mecanico extends Funcionario {
+    
+    public Mecanico(int id, String nome, String cpf){
+        super(id, nome, cpf, CargoUsuario.Mecanico);
+    }
+    
+    public void realizarManutencao(){
+        System.out.println("Realizando manutenção do veiculo");
+    }
+    
+    public void verificarStatusVeiculo(){
+        System.out.println("Verificando status do veiculo ");
+    }
+    
     
 }

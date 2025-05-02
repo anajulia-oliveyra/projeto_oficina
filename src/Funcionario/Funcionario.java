@@ -1,19 +1,26 @@
-package Funcionario;
-
-import org.json.JSONObject;
-        
+package Funcionario;        
         
 public class Funcionario {
+    private int id;
     private String nome;
     private String CPF;
-    private String cargo;
+    //private Cargo cargo;
     private CargoUsuario tipoUsuario;
     
-    public Funcionario(String nome, String CPF, String cargo, CargoUsuario tipoUsuario){
+    public Funcionario(int id, String nome, String CPF, CargoUsuario tipoUsuario){
+        this.id = id;
         this.nome = nome;
         this.CPF = CPF;
-        this.cargo = cargo;
+        //this.cargo = cargo;
         this.tipoUsuario = tipoUsuario;
+    }
+    
+    public int getId(){
+        return id;
+    }
+    
+    public void setId(int id){
+        this.id = id;
     }
 
     public String getNome() {
@@ -32,14 +39,14 @@ public class Funcionario {
         this.CPF = CPF;
     }
 
-    public String getCargo() {
+   /*/ public Cargo getCargo() {
         return cargo;
     }
 
-    public void setCargo(String cargo) {
+    public void setCargo(Cargo cargo) {
         this.cargo = cargo;
     }
-
+*/
     public CargoUsuario getTipoUsuario() {
         return tipoUsuario;
     }
@@ -52,9 +59,9 @@ public class Funcionario {
     @Override
     public String toString(){
         return "Funcionario {" +
-                "Nome = '" + nome + '\'' +
+                "Id = '" + id + '\'' +
+                ", Nome = '" + nome + '\'' +
                 ", CPF = '" + CPF + '\'' +
-                ", Cargo = '" + cargo +
                 '}';
     }
 }
