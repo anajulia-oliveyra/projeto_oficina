@@ -7,7 +7,7 @@ public class Funcionario {
     private String nome;
     private String CPF;
     private String cargo;
-    private Agenda.Agenda agenda;
+    private Agenda agenda;
     private ControlePontos controlePontos;
     
     public Funcionario(int id, String nome, String CPF, String cargo, Agenda agenda){
