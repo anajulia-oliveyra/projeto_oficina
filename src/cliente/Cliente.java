@@ -8,7 +8,7 @@ public class Cliente {
     private String telefone;
     private String email;
     private String cpf;
-    private Agenda.Agenda agenda;
+    private Agenda agenda;
     
     public Cliente(String nome, String endereço, String telefone, String email, String cpf, Agenda agenda){
         this.nome = nome;
@@ -33,11 +33,7 @@ public class Cliente {
         }
         return "***";
     }
-    
-    public void consultarStatusVeiculo(){
-        System.out.println(getNome() + " consultando status do veiculo.");
-    }
-    
+     
     public void realizarPagamento(boolean pago){
         System.out.println(pago ? " Pagamento realizado." : "Pagamento ainda nao realizado");
     }
