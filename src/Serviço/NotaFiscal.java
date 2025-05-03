@@ -35,7 +35,7 @@ public class NotaFiscal {
         return total;
     }
 
-    public String gerarResumo() {
+    public String gerarNota() {
         StringBuilder resumo = new StringBuilder();
         
         resumo.append("Nota Fiscal\n");
