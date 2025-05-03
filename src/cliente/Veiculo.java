@@ -19,6 +19,32 @@ public class Veiculo {
         this.dono = dono;
     }
 
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public Cliente getDono() {
+        return dono;
+    }
+    
+    
+
     public void obterDetalhes(){
         System.out.println("Veiculo de " + dono.getNome() + ":");
         System.out.println(marca + " " + modelo + " - " + cor + " - " + ano + " - Placa" + placa);

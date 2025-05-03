@@ -1,10 +1,10 @@
 package Financeiro;
 
-public class Despesas {
+public class Receitas {
     private String descricao;
     private double valor;
     
-    public Despesas(String descricao, double valor){
+    public Receitas(String descricao, double valor){
         this.descricao = descricao;
         this.valor = valor;
     }
