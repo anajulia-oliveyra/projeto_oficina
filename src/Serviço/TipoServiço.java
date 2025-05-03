@@ -1,13 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Serviço;
 
-/**
- *
- * @author ADM
- */
 public class TipoServiço {
+    private TipoServiço tipo;
+    private String descricao;
+    private double preco;
     
+    public TipoServiço(TipoServiço tipo, String descricao, double preco){
+        this.tipo = tipo;
+        this.descricao = descricao;
+        this.preco = preco;
+    }
+
+    public TipoServiço getTipo() {
+        return tipo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+    
+    public String toString(){
+        return "Serviço: " + tipo + 
+                "\n Descricao: " + descricao +
+                "\n Preco: R$" + preco;
+    }
 }
