@@ -1,36 +1,41 @@
-
 package auth;
 
-/**
- *
- * @author Ana Julia e Ana Carolina
- */
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Login {
-
-    private JSONArray usuarios;
+    private List<Usuario> usuarios;
 
     public Login(String caminhoJson) {
+        usuarios = new ArrayList<>();
         try (InputStream is = new FileInputStream(caminhoJson)) {
             JSONTokener tokener = new JSONTokener(is);
-            usuarios = new JSONArray(tokener);
+            JSONArray array = new JSONArray(tokener);
+
+            for (int i = 0; i < array.length(); i++) {
+                JSONObject obj = array.getJSONObject(i);
+                String nome = obj.getString("nome");
+                String login = obj.getString("login");
+                String senha = obj.getString("senha");
+                CargoUsuario cargo = CargoUsuario.valueOf(obj.getString("cargo").toUpperCase());
+
+                usuarios.add(new Usuario(nome, login, senha, cargo));
+            }
         } catch (Exception e) {
-            System.out.println("Erro ao ler JSON: " + e.getMessage());
-            usuarios = new JSONArray(); // evita null pointer
+            System.out.println("Erro ao carregar usuários: " + e.getMessage());
         }
     }
 
-    public JSONObject autenticar(String email, String senha) {
-        for (int i = 0; i < usuarios.length(); i++) {
-            JSONObject usuario = usuarios.getJSONObject(i);
-            if (usuario.getString("email").equals(email) && usuario.getString("senha").equals(senha)) {
-                return usuario;
+    public Usuario autenticar(String login, String senha) {
+        for (Usuario u : usuarios) {
+            if (u.getLogin().equals(login) && u.getSenha().equals(senha)) {
+                return u;
             }
         }
         return null;
