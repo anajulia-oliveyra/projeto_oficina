@@ -1,6 +1,6 @@
 package Funcionario;
 
-import Agenda.agenda;
+import Agenda.Agenda;
 import java.util.Arrays;
 
 public class funcionarioView {
@@ -8,7 +8,7 @@ public class funcionarioView {
         
         funcionarioController controller = new funcionarioController();
         
-        agenda age = new agenda(
+        Agenda age = new Agenda(
                 Arrays.asList("08:00", "10:00", "14:00"),
                 Arrays.asList("15/06", "22/06", "02/07")
         );

@@ -1,37 +1,64 @@
 package Agenda;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
-        
-public class agenda {
-    private List<String> horariosDisponiveis;
-    private List<String> datasDisponiveis;
-    
-    public agenda(List<String> horariosDisponiveis, List<String> datasDisponiveis){
-        this.horariosDisponiveis = horariosDisponiveis;
-        this.datasDisponiveis = datasDisponiveis;
-    }
-    
-    public void verificarDisponibilidadeElevadores(){
-        System.out.println("Horarios disponiveis para o uso de elevadores: ");
-        for(String horario : horariosDisponiveis){
-            System.out.println("- " + horario);
-        }
-    }
-    
-    public void verificarDisponibilidadeMecanicos(){
-        System.out.println("Datas disponiveis para atendimento do mecanico: ");
-        for(String data : datasDisponiveis){
-            System.out.println("- " + data);
-        }
+
+public class Agenda {
+    private List<Agendamento> agendamentos;
+
+    public Agenda() {
+        this.agendamentos = new ArrayList<>();
     }
 
-    public List<String> getHorariosDisponiveis() {
-        return horariosDisponiveis;
+    public boolean agendar(LocalDateTime inicio, LocalDateTime fim, String tipoServico, double valorPago) {
+        int elevadorDisponivel = buscarElevadorDisponivel(inicio, fim, tipoServico);
+        if (elevadorDisponivel == -1) {
+            System.out.println("Nenhum elevador disponível para este horário.");
+            return false;
+        }
+
+        Agendamento novo = new Agendamento(inicio, fim, tipoServico, elevadorDisponivel, valorPago);
+        agendamentos.add(novo);
+        System.out.println("Agendamento realizado no elevador " + elevadorDisponivel);
+        return true;
     }
 
-    public List<String> getDatasDisponiveis() {
-        return datasDisponiveis;
+    public int buscarElevadorDisponivel(LocalDateTime inicio, LocalDateTime fim, String tipoServico) {
+        int[] idsValidos = tipoServico.equalsIgnoreCase("alinhamento") ? new int[]{0} : new int[]{1, 2};
+
+        for (int id : idsValidos) {
+            boolean ocupado = false;
+            for (Agendamento ag : agendamentos) {
+                if (!ag.isCancelado() && ag.getIdElevador() == id && ag.conflitaCom(inicio, fim)) {
+                    ocupado = true;
+                    break;
+                }
+            }
+            if (!ocupado) return id;
+        }
+        return -1;
     }
-    
-    
+
+    public boolean cancelarAgendamento(LocalDateTime inicio, int idElevador) {
+        for (Agendamento ag : agendamentos) {
+            if (!ag.isCancelado() && ag.getInicio().equals(inicio) && ag.getIdElevador() == idElevador) {
+                double reembolso = ag.cancelar();
+                System.out.println("Agendamento cancelado. Reembolso ao cliente: R$" + reembolso);
+                return true;
+            }
+        }
+        System.out.println("Agendamento não encontrado.");
+        return false;
+    }
+
+    public void listarAgendamentos() {
+        if (agendamentos.isEmpty()) {
+            System.out.println("Nenhum agendamento cadastrado.");
+        } else {
+            for (Agendamento ag : agendamentos) {
+                System.out.println(ag);
+            }
+        }
+    }
 }

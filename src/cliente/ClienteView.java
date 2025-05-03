@@ -1,12 +1,12 @@
 package cliente;
 
-import Agenda.agenda;
+import Agenda.Agenda;
 import java.util.Arrays;
 
 public class ClienteView{
     public static void main(String[] args){
         
-        agenda agen = new agenda(
+        Agenda agen = new Agenda(
                 Arrays.asList("08:00", "10:00", "14:00"),
                 Arrays.asList("15/06", "22/06", "02/07")
         );

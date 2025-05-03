@@ -1,10 +1,10 @@
 package Funcionario;
 
-import Agenda.agenda;
+import Agenda.Agenda;
 
 public class Administrador extends Funcionario {
     
-    public Administrador(int id, String nome, String cargo, String cpf, agenda agenda){
+    public Administrador(int id, String nome, String cargo, String cpf, Agenda agenda){
         super(id, nome, cargo, cpf, agenda);
     }
     

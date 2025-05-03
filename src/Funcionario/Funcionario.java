@@ -1,16 +1,16 @@
 package Funcionario;        
 
-import Agenda.agenda;
+import Agenda.Agenda;
 
 public class Funcionario {
     private int id;
     private String nome;
     private String CPF;
     private String cargo;
-    private Agenda.agenda agenda;
+    private Agenda.Agenda agenda;
     private ControlePontos controlePontos;
     
-    public Funcionario(int id, String nome, String CPF, String cargo, agenda agenda){
+    public Funcionario(int id, String nome, String CPF, String cargo, Agenda agenda){
         this.id = id;
         this.nome = nome;
         this.CPF = CPF;

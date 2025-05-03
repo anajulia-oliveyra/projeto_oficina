@@ -1,6 +1,6 @@
 package cliente;
 
-import Agenda.agenda;
+import Agenda.Agenda;
 
 public class Cliente {
     private String nome;
@@ -8,9 +8,9 @@ public class Cliente {
     private String telefone;
     private String email;
     private String cpf;
-    private Agenda.agenda agenda;
+    private Agenda.Agenda agenda;
     
-    public Cliente(String nome, String endereço, String telefone, String email, String cpf, agenda agenda){
+    public Cliente(String nome, String endereço, String telefone, String email, String cpf, Agenda agenda){
         this.nome = nome;
         this.endereço = endereço;
         this.telefone = telefone;
