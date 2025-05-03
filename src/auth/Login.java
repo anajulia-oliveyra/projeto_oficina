@@ -3,7 +3,7 @@ package auth;
 
 /**
  *
- * @author Ana Julia e Ana CArolina
+ * @author Ana Julia e Ana Carolina
  */
 import org.json.JSONArray;
 import org.json.JSONObject;

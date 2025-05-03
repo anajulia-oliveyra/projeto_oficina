@@ -1,6 +1,6 @@
 package Funcionario;
 
-public enum CargoUsuario {
+public enum CargoUsuario_1 {
     Administrador,
     Atendente,
     Mecanico

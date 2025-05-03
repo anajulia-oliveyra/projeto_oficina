@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 
 /**
  *
- * @author ADM
+ * @author Ana Julia Oliveira e Ana Carolina Pereira
  */
 public class AdicionarUsuario {
    public static void adicionarUsuario(String nome, String email, String senha, String cargo )

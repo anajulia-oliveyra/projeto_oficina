@@ -6,7 +6,7 @@ package Financeiro;
 
 /**
  *
- * @author Ana Carolina
+ * @author Ana Carolina e Ana Julia
  */
 public class financeiroController {
     
