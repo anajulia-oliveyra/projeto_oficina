@@ -5,12 +5,12 @@ import java.time.LocalTime;
 
 public class ControlePontos {
     private String nome;
-    private String id;
+    private int id;
     private String cpf;
     private LocalDate data;
     private LocalTime hora;
     
-    public ControlePontos(String nome, String id, String cpf){
+    public ControlePontos(String nome, int id, String cpf){
         this.nome = nome;
         this.id = id;
         this.cpf = cpf;
