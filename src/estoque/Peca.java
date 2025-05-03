@@ -1,10 +1,5 @@
-
 package estoque;
 
-/**
- *
- * @author Ana Júlia Oliveira e Ana Carolina Pereira
- */
 public class Peca {
     private String codigo;
     private String nome;
