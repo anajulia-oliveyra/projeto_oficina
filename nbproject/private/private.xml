@@ -32,6 +32,28 @@
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/Veiculo.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/financeiro/BalançoMensal.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/financeiro/Despesas.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Agenda/agenda.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Main/Main.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Serviço/NotaFiscal.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Serviço/StatusDoServiço.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Serviço/TipoServiço.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Serviço/serviçoController.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Serviço/serviçoView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/estoque/Peca.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/financeiro/financeiroController.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/financeiro/financeiroView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/funcionario/ControlePontos.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/pagamento/Pagamento.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/relatorio/RelatorioFinanceiro.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/relatorio/RelatorioServico.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/relatorio/SelecionaPeriodoView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/relatorio/VisualizarRelatorioView.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/util/arquivosUtil.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/util/calculadoraFinanceiraUtil.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/util/conversorUtil.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/venda/ItemVenda.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/venda/Venda.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/vistoria/RelatorioVistoria.java</file>
         </group>
     </open-files>
 </project-private>
