@@ -17,8 +17,7 @@
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/Usuario.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/LoginView.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/Login.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/CargoUsuario.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/AdicionarUsuario.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/auth/InfoUsuario.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/Cliente.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/ClienteRepository.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/ClienteView.java</file>
@@ -26,13 +25,11 @@
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/OrdemdeServiçoView.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/mecanico/ControleEspecialista.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/mecanico/Especialista.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/mecanico/Mecanico.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/util/agendamentoUtil.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/venda/HistoricoVendasView.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/cliente/Veiculo.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/financeiro/BalançoMensal.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/financeiro/Despesas.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Agenda/agenda.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Agenda/Agenda.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Main/Main.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Serviço/NotaFiscal.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Serviço/StatusDoServiço.java</file>
@@ -44,16 +41,9 @@
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/financeiro/financeiroView.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/funcionario/ControlePontos.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/pagamento/Pagamento.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/relatorio/RelatorioFinanceiro.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/relatorio/RelatorioServico.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/relatorio/SelecionaPeriodoView.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/relatorio/VisualizarRelatorioView.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/util/arquivosUtil.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/util/calculadoraFinanceiraUtil.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/util/conversorUtil.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/venda/ItemVenda.java</file>
             <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/venda/Venda.java</file>
-            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/vistoria/RelatorioVistoria.java</file>
+            <file>file:/C:/Users/ADM/Documents/projeto_oficina/src/Agenda/Agendamento.java</file>
         </group>
     </open-files>
 </project-private>
