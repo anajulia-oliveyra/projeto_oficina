@@ -1,8 +1,8 @@
-package auth;
+package funcionario;
 
 public enum CargoUsuario {
     ADMINISTRADOR,
-    ATENDENTE,
+    COLABORADOR,
     MECANICO;
     
     public static CargoUsuario fromString(String s){

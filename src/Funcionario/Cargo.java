@@ -1,4 +1,4 @@
-package Funcionario;
+package funcionario;
 
 public class Cargo {
     private int id;

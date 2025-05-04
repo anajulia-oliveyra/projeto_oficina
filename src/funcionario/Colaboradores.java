@@ -54,10 +54,6 @@ public class Colaboradores {
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
-
-
-    
-    
     
     public void acessarAgenda(){
         System.out.println(getNome() + " acessando agenda");
