@@ -1,12 +1,14 @@
 package Financeiro;
 
 import java.time.LocalDate;
+import java.util.List;
+import java.util.ArrayList;
 
 public class BalançoMensal {
-    private Receitas[] receitas;
-    private Despesas[] despesas;
+    private List<Receitas> receitas;
+    private List<Despesas> despesas;
 
-    public BalançoMensal(Receitas[] receitas, Despesas[] despesas){
+    public BalançoMensal(List<Receitas> receitas, List<Despesas> despesas){
         this.receitas = receitas;
         this.despesas = despesas;
     }
@@ -15,7 +17,7 @@ public class BalançoMensal {
         double total = 0;
         for (Receitas r : receitas) {
             total += r.getValor();
-        }
+     
         return total;
     }
 

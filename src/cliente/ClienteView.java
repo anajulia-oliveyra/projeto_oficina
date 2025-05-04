@@ -1,6 +1,6 @@
 package cliente;
 
-import Agenda.Agenda;
+import Agenda.agenda;
 import java.util.Arrays;
 
 public class ClienteView{
@@ -13,7 +13,7 @@ public class ClienteView{
         
         Cliente clie = new Cliente("Carla", "Rua carvalho", "3898870-7070", "carla@gmail.com", "123.987.456-99", agen);
         
-        clie.consultarStatusVeiculo();
+        clie.consultarVeiculo();
         clie.realizarPagamento(true);
     }
 }

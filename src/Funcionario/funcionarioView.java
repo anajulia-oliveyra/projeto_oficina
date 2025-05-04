@@ -1,6 +1,6 @@
 package Funcionario;
 
-import Agenda.Agenda;
+import Agenda.agenda;
 import java.util.Arrays;
 
 public class funcionarioView {

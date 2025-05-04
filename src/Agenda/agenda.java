@@ -4,10 +4,10 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Agenda {
+public class agenda {
     private List<Agendamento> agendamentos;
 
-    public Agenda() {
+    public agenda() {
         this.agendamentos = new ArrayList<>();
     }
 

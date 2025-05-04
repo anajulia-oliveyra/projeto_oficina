@@ -1,10 +1,6 @@
-
 package Agenda;
 import java.time.LocalDateTime;
-/**
- *
- * @author Ana Julia e Ana Carolina
- */
+
 public class Agendamento {
   
     private LocalDateTime inicio;
