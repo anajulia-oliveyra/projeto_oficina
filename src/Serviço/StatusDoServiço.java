@@ -35,6 +35,11 @@ public class StatusDoServiço {
     public void setStatus(Status status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "StatusDoServi\u00e7o{" + "status=" + status + '}';
+    }
     
     
 }
