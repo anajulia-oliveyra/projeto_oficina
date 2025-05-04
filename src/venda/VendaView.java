@@ -11,3 +11,4 @@ package venda;
 public class VendaView {
     
 }
+Tipo 

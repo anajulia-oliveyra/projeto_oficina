@@ -8,7 +8,7 @@ public class funcionarioView {
         
         funcionarioController controller = new funcionarioController();
         
-        Agenda age = new Agenda(
+        Agenda agenda = new Agenda(
                 Arrays.asList("08:00", "10:00", "14:00"),
                 Arrays.asList("15/06", "22/06", "02/07")
         );
