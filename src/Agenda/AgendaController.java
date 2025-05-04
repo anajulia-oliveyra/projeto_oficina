@@ -1,7 +1,7 @@
 package Agenda;
 import java.time.LocalDateTime;
 
-public class Agendamento {
+public class AgendaController {
   
     private LocalDateTime inicio;
     private LocalDateTime fim;
@@ -10,7 +10,7 @@ public class Agendamento {
     private double valorPago;
     private boolean cancelado = false;
 
-    public Agendamento(LocalDateTime inicio, LocalDateTime fim, String tipoServico, int idElevador, double valorPago) {
+    public AgendaController(LocalDateTime inicio, LocalDateTime fim, String tipoServico, int idElevador, double valorPago) {
         this.inicio = inicio;
         this.fim = fim;
         this.tipoServico = tipoServico;

@@ -1,32 +1,29 @@
 package Financeiro;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.nio.file.*;
 import java.time.LocalDate;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class BalançoMensal {
     private List<Receitas> receitas;
     private List<Despesas> despesas;
 
-    public BalançoMensal(List<Receitas> receitas, List<Despesas> despesas){
+    public BalançoMensal(List<Receitas> receitas, List<Despesas> despesas) {
         this.receitas = receitas;
         this.despesas = despesas;
     }
 
     public double getTotalReceitas() {
-        double total = 0;
-        for (Receitas r : receitas) {
-            total += r.getValor();
-     
-        return total;
+        return receitas.stream().mapToDouble(Receitas::getValor).sum();
     }
 
     public double getTotalDespesas() {
-        double total = 0;
-        for (Despesas d : despesas) {
-            total += d.getValor();
-        }
-        return total;
+        return despesas.stream().mapToDouble(Despesas::getValor).sum();
     }
 
     public double getSaldoFinal() {
@@ -64,5 +61,41 @@ public class BalançoMensal {
         System.out.println("Total de despesas: R$ " + totalDespesas);
         System.out.println("Saldo final: R$ " + saldo);
         System.out.println();
+    }
+
+    public void salvarEmArquivo(String caminho) throws IOException {
+        JSONObject obj = new JSONObject();
+
+        JSONArray receitasArray = new JSONArray();
+        for (Receitas r : receitas) {
+            receitasArray.put(r.toJSON());
+        }
+
+        JSONArray despesasArray = new JSONArray();
+        for (Despesas d : despesas) {
+            despesasArray.put(d.toJSON());
+        }
+
+        obj.put("receitas", receitasArray);
+        obj.put("despesas", despesasArray);
+
+        Files.writeString(Paths.get(caminho), obj.toString(2));
+    }
+
+    public static BalançoMensal carregarDeArquivo(String caminho) throws IOException {
+        String conteudo = Files.readString(Paths.get(caminho));
+        JSONObject obj = new JSONObject(conteudo);
+
+        List<Receitas> receitas = new ArrayList<>();
+        for (Object o : obj.getJSONArray("receitas")) {
+            receitas.add(Receitas.fromJSON((JSONObject) o));
+        }
+
+        List<Despesas> despesas = new ArrayList<>();
+        for (Object o : obj.getJSONArray("despesas")) {
+            despesas.add(Despesas.fromJSON((JSONObject) o));
+        }
+
+        return new BalançoMensal(receitas, despesas);
     }
 }

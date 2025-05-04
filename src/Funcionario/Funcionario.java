@@ -8,7 +8,7 @@ public class Funcionario {
     private String CPF;
     private String cargo;
     private agenda agenda;
-    private ControlePontos controlePontos;
+    private ControlePonto controlePontos;
     
     public Funcionario(int id, String nome, String CPF, String cargo, agenda agenda){
         this.id = id;
@@ -16,7 +16,7 @@ public class Funcionario {
         this.CPF = CPF;
         this.cargo = cargo;
         this.agenda = agenda;
-        this.controlePontos = new ControlePontos(nome, id, CPF);
+        this.controlePontos = new ControlePonto(nome, id, CPF);
     }
     
     public int getId(){
@@ -51,7 +51,7 @@ public class Funcionario {
         this.cargo = cargo;
     }
 
-    public ControlePontos getControlePontos() {
+    public ControlePonto getControlePontos() {
         return controlePontos;
     }
     

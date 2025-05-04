@@ -1,14 +1,13 @@
 package Serviço;
 
-import Serviço.StatusDoServiço.Status;
-import Serviço.serviçoController;
+import Serviço.StatusDoServico.Status;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class serviçoView {
+public class ServicoView {
 
-    private serviçoController controller = new serviçoController();
+    private ServicoController controller = new ServicoController();
     private Scanner scanner = new Scanner(System.in);
 
     public void exibirMenu() {
@@ -47,11 +46,11 @@ public class serviçoView {
     }
 
     private void listarServicos() {
-        List<StatusDoServiço> servicos = controller.listarServico();
+        List<StatusDoServico> servicos = controller.listarServico();
         if (servicos.isEmpty()) {
             System.out.println("Nenhum serviço cadastrado.");
         } else {
-            for (StatusDoServiço s : servicos) {
+            for (StatusDoServico s : servicos) {
                 System.out.println("Descrição: " + s.getDescricao());
                 System.out.println("Preço: R$" + s.getPreco());
                 System.out.println("Status: " + s.getStatus());

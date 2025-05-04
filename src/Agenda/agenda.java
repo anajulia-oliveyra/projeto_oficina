@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class agenda {
-    private List<Agendamento> agendamentos;
+    private List<AgendaController> agendamentos;
 
     public agenda() {
         this.agendamentos = new ArrayList<>();
@@ -18,7 +18,7 @@ public class agenda {
             return false;
         }
 
-        Agendamento novo = new Agendamento(inicio, fim, tipoServico, elevadorDisponivel, valorPago);
+        AgendaController novo = new AgendaController(inicio, fim, tipoServico, elevadorDisponivel, valorPago);
         agendamentos.add(novo);
         System.out.println("Agendamento realizado no elevador " + elevadorDisponivel);
         return true;
@@ -29,7 +29,7 @@ public class agenda {
 
         for (int id : idsValidos) {
             boolean ocupado = false;
-            for (Agendamento ag : agendamentos) {
+            for (AgendaController ag : agendamentos) {
                 if (!ag.isCancelado() && ag.getIdElevador() == id && ag.conflitaCom(inicio, fim)) {
                     ocupado = true;
                     break;
@@ -41,7 +41,7 @@ public class agenda {
     }
 
     public boolean cancelarAgendamento(LocalDateTime inicio, int idElevador) {
-        for (Agendamento ag : agendamentos) {
+        for (AgendaController ag : agendamentos) {
             if (!ag.isCancelado() && ag.getInicio().equals(inicio) && ag.getIdElevador() == idElevador) {
                 double reembolso = ag.cancelar();
                 System.out.println("Agendamento cancelado. Reembolso ao cliente: R$" + reembolso);
@@ -56,7 +56,7 @@ public class agenda {
         if (agendamentos.isEmpty()) {
             System.out.println("Nenhum agendamento cadastrado.");
         } else {
-            for (Agendamento ag : agendamentos) {
+            for (AgendaController ag : agendamentos) {
                 System.out.println(ag);
             }
         }
