@@ -1,4 +1,4 @@
-package Funcionario;
+package funcionario;
 
 import Agenda.agenda;
 
