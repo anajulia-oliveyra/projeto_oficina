@@ -1,4 +1,4 @@
-package funcionario;
+package auth;
 
 public enum CargoUsuario {
     ADMINISTRADOR,
