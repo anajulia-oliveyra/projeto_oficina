@@ -1,21 +1,16 @@
-
 package funcionario;
+
 import Agenda.agenda;
 
-
-/**
- *
- * @author Ana Julia 
- */
-public class Colaboradores {
-    private int id;
+public class Colaborador {
+     private int id;
     private String nome;
     private String CPF;
     private String cargo;
     private agenda agenda;
 
     
-    public Colaboradores(int id, String nome, String CPF, String cargo, agenda agenda){
+    public Colaborador(int id, String nome, String CPF, String cargo, agenda agenda){
         this.id = id;
         this.nome = nome;
         this.CPF = CPF;
@@ -55,10 +50,6 @@ public class Colaboradores {
         this.cargo = cargo;
     }
 
-
-    
-    
-    
     public void acessarAgenda(){
         System.out.println(getNome() + " acessando agenda");
     }
@@ -76,3 +67,4 @@ public class Colaboradores {
     }
 
 }
+

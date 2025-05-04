@@ -2,7 +2,7 @@ package funcionario;
 
 import Agenda.agenda;
 
-public class Mecanico extends Colaboradores {
+public class Mecanico extends Colaborador {
     
     public Mecanico(int id, String nome, String cpf, String cargo, agenda agenda){
         super(id, nome, cpf, cargo, agenda);

@@ -1,4 +1,4 @@
-package Funcionario;
+package funcionario;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

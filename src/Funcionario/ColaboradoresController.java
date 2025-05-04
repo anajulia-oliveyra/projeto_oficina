@@ -1,24 +1,23 @@
-
 package funcionario;
 
-/**
- *
- * @author Ana Julia Oliveira
- */
-public class ColaboradorController {
-     public void acessarAgenda(Colaboradores f){
+import funcionario.Administrador;
+import funcionario.Colaborador;
+import funcionario.Mecanico;
+
+public class ColaboradoresController {
+     public void acessarAgenda(Colaborador f){
         f.acessarAgenda();
     }
 
-    public void realizarAgendamento(Colaboradores f){
+    public void realizarAgendamento(Colaborador f){
         f.realizarAgendamento();
     }
 
-    public void mostrarDados(Colaboradores f){
+    public void mostrarDados(Colaborador f){
         System.out.println(f);
     }
 
-    public void executarAcoesEspecificas(Colaboradores f){
+    public void executarAcoesEspecificas(Colaborador f){
         if(f instanceof Administrador){
             Administrador a = (Administrador) f;
             a.gerarBalançoMensal();
