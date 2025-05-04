@@ -13,7 +13,6 @@ public class Colaboradores {
     private String CPF;
     private String cargo;
     private agenda agenda;
-    private ControlePonto controlepontos;
 
     
     public Colaboradores(int id, String nome, String CPF, String cargo, agenda agenda){
@@ -22,7 +21,6 @@ public class Colaboradores {
         this.CPF = CPF;
         this.cargo = cargo;
         this.agenda = agenda;
-        this.controlePontos = new ControlePonto(nome, id, CPF);
     }
     
     public int getId(){
@@ -57,9 +55,7 @@ public class Colaboradores {
         this.cargo = cargo;
     }
 
-    public ControlePonto getControlePontos() {
-        return controlePontos;
-    }
+
     
     
     
@@ -69,10 +65,6 @@ public class Colaboradores {
     
     public void realizarAgendamento(){
         System.out.println(getNome() + " realizando agendamento");
-    }
-    
-    public void baterPonto(){
-        controlePontos.baterPonto();
     }
     
     @Override
