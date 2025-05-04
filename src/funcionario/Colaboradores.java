@@ -2,7 +2,7 @@ package Funcionario;
 
 import Agenda.agenda;
 
-public class Funcionario {
+public class Colaboradores {
     private int id;
     private String nome;
     private String CPF;
@@ -10,7 +10,7 @@ public class Funcionario {
     private agenda agenda;
     private ControlePonto controlePontos;
     
-    public Funcionario(int id, String nome, String CPF, String cargo, agenda agenda){
+    public Colaboradores(int id, String nome, String CPF, String cargo, agenda agenda){
         this.id = id;
         this.nome = nome;
         this.CPF = CPF;

@@ -22,7 +22,7 @@ public class financeiroController {
     }
 
     public BalançoMensal gerarBalanço() {
-        return new BalançoMensal(receitas, despesas); // ordem corrigida
+        return new BalançoMensal(receitas, despesas);
     }
 
     public List<Despesas> listarDespesas() {

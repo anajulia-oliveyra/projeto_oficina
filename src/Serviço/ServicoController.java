@@ -1,6 +1,5 @@
 package Serviço;
 
-import Serviço.StatusDoServico;
 import java.util.ArrayList;
 import java.util.List;
 

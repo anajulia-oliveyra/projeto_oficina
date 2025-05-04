@@ -3,7 +3,6 @@ package Serviço;
 import java.util.List;
 import cliente.Cliente;
 import cliente.Veiculo;
-import Serviço.TipoServico;
 import estoque.Peca;
 
 public class NotaFiscal {

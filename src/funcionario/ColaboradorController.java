@@ -1,20 +1,20 @@
 package Funcionario;
 
-public class funcionarioController {
+public class ColaboradorController {
     
-    public void acessarAgenda(Funcionario f){
+    public void acessarAgenda(Colaboradores f){
         f.acessarAgenda();
     }
     
-    public void realizarAgendamneto(Funcionario f){
+    public void realizarAgendamneto(Colaboradores f){
         f.realizarAgendamento();
     }
     
-    public void mostrarDados(Funcionario f){
+    public void mostrarDados(Colaboradores f){
         System.out.println(f);
     }
     
-    public void executarAcoesExpecificas(Funcionario f){
+    public void executarAcoesExpecificas(Colaboradores f){
         if(f instanceof Administrador){
             Administrador a = (Administrador) f;
             a.gerarBalançoMensal();
@@ -30,7 +30,7 @@ public class funcionarioController {
             m.gerarRelatorioInspecao();
             
         }
-        else if(f instanceof Atendente){
+        else if(f instanceof Colaboradores){
             System.out.println(f.getNome() + " e atendente, nao tem acoes especificas.");
         }
         else{

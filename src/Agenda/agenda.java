@@ -20,7 +20,7 @@ public class agenda {
 
         AgendaController novo = new AgendaController(inicio, fim, tipoServico, elevadorDisponivel, valorPago);
         agendamentos.add(novo);
-        System.out.println("Agendamento realizado no elevador " + elevadorDisponivel);
+        System.out.println("Agendamento realizado para elevador " + elevadorDisponivel);
         return true;
     }
 

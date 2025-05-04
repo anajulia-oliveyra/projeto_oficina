@@ -84,7 +84,7 @@ public class InfoUsuario {
 
     private static JSONArray lerUsuarios() throws Exception {
         if (!Files.exists(Paths.get(CAMINHO))) {
-            return new JSONArray(); // Se o arquivo não existir, retorna uma lista vazia
+            return new JSONArray();
         }
 
         String conteudo = new String(Files.readAllBytes(Paths.get(CAMINHO)));
