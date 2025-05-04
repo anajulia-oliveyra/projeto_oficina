@@ -3,17 +3,17 @@ package Serviço;
 import java.util.List;
 import cliente.Cliente;
 import cliente.Veiculo;
-import Serviço.TipoServiço;
+import Serviço.TipoServico;
 import estoque.Peca;
 
 public class NotaFiscal {
     private Cliente cliente;
     private Veiculo veiculo;
-    private List<TipoServiço> servicosRealizados;
+    private List<TipoServico> servicosRealizados;
     private List<Peca> pecasUtilizadas;
     private double total;
 
-    public NotaFiscal(Cliente cliente, Veiculo veiculo, List<TipoServiço> servicos, List<Peca> pecas) {
+    public NotaFiscal(Cliente cliente, Veiculo veiculo, List<TipoServico> servicos, List<Peca> pecas) {
         this.cliente = cliente;
         this.veiculo = veiculo;
         this.servicosRealizados = servicos;
@@ -23,7 +23,7 @@ public class NotaFiscal {
 
     private void calcularTotal() {
         total = 0.0;
-        for (TipoServiço s : servicosRealizados) {
+        for (TipoServico s : servicosRealizados) {
             total += s.getPreco();
         }
         for (Peca p : pecasUtilizadas) {
@@ -43,7 +43,7 @@ public class NotaFiscal {
         resumo.append("Veículo: ").append(veiculo.getModelo()).append(" - ").append(veiculo.getPlaca()).append("\n");
         
         resumo.append("Serviços realizados:\n");
-        for (TipoServiço s : servicosRealizados) {
+        for (TipoServico s : servicosRealizados) {
             resumo.append("- ").append(s.getDescricao()).append(" R$").append(s.getPreco()).append("\n");
         }
         resumo.append("Peças utilizadas:\n");

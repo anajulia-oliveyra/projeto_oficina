@@ -3,14 +3,14 @@ package Funcionario;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class ControlePontos {
+public class ControlePonto {
     private String nome;
     private int id;
     private String cpf;
     private LocalDate data;
     private LocalTime hora;
     
-    public ControlePontos(String nome, int id, String cpf){
+    public ControlePonto(String nome, int id, String cpf){
         this.nome = nome;
         this.id = id;
         this.cpf = cpf;
