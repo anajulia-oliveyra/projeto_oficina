@@ -1,4 +1,4 @@
-package Funcionario;
+package funcionario;
 
 import Agenda.agenda;
 
@@ -50,10 +50,6 @@ public class Colaborador {
         this.cargo = cargo;
     }
 
-
-    
-    
-    
     public void acessarAgenda(){
         System.out.println(getNome() + " acessando agenda");
     }

@@ -1,23 +1,23 @@
-package Funcionario;
+package funcionario;
 
 import funcionario.Administrador;
-import funcionario.Colaboradores;
+import funcionario.Colaborador;
 import funcionario.Mecanico;
 
 public class ColaboradoresController {
-     public void acessarAgenda(Colaboradores f){
+     public void acessarAgenda(Colaborador f){
         f.acessarAgenda();
     }
 
-    public void realizarAgendamento(Colaboradores f){
+    public void realizarAgendamento(Colaborador f){
         f.realizarAgendamento();
     }
 
-    public void mostrarDados(Colaboradores f){
+    public void mostrarDados(Colaborador f){
         System.out.println(f);
     }
 
-    public void executarAcoesEspecificas(Colaboradores f){
+    public void executarAcoesEspecificas(Colaborador f){
         if(f instanceof Administrador){
             Administrador a = (Administrador) f;
             a.gerarBalançoMensal();
