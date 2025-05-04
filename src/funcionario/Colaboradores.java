@@ -1,8 +1,7 @@
 
 package funcionario;
 import Agenda.agenda;
-import java.time.LocalDate;
-import java.time.LocalTime;
+
 
 /**
  *
@@ -15,6 +14,7 @@ public class Colaboradores {
     private String cargo;
     private agenda agenda;
     private ControlePonto controlepontos;
+
     
     public Colaboradores(int id, String nome, String CPF, String cargo, agenda agenda){
         this.id = id;
